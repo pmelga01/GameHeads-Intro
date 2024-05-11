@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &162456352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8532686584324459977, guid: ba6aa0059b6291547a91c12455b584e0, type: 3}
+  m_PrefabInstance: {fileID: 6355188409895819871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &162456357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162456352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31383982a1cb66459f081b1c4d0d695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8484133762461283373, guid: cf690ec03fc152d41aa712377a231742, type: 3}
+  playerAgent: {fileID: 0}
 --- !u!1 &246568227
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8484133762461283373, guid: cf690ec03fc152d41aa712377a231742, type: 3}
+  playerAgent: {fileID: 0}
 --- !u!4 &986264570
 Transform:
   m_ObjectHideFlags: 0
@@ -782,6 +802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
+    - target: {fileID: 1796757034470860005, guid: ba6aa0059b6291547a91c12455b584e0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1944208228388733431, guid: ba6aa0059b6291547a91c12455b584e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.546118
@@ -825,7 +849,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8532686584324459977, guid: ba6aa0059b6291547a91c12455b584e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 162456357}
   m_SourcePrefab: {fileID: 100100000, guid: ba6aa0059b6291547a91c12455b584e0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
